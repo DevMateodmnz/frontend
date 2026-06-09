@@ -1,17 +1,10 @@
 import React from 'react';
 
-/**
- * CounterClass — Contador con state y eventos
- *
- * Conceptos clave:
- *  - this.state: objeto que contiene el valor del contador
- *  - this.setState(): actualiza el state y dispara un re-render
- *  - Eventos onClick: las funciones increment/decrement se pasan como handlers
- */
+// Componente de clase con state y eventos onClick
 class CounterClass extends React.Component {
   constructor(props) {
     super(props);
-    // Inicializamos el state con el contador en 0
+    // State inicial
     this.state = { count: 0 };
   }
 

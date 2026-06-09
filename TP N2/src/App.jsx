@@ -3,12 +3,6 @@ import CounterClass from './components/CounterClass.jsx';
 import ClockClass from './components/ClockClass.jsx';
 import AgeFetcher from './components/AgeFetcher.jsx';
 
-/**
- * App — Componente padre
- *
- * Demuestra comunicación padre → hijo pasando props (title) a cada componente.
- * Cada componente hijo está en su propio archivo, siguiendo buena separación.
- */
 function App() {
   return (
     <div className="app">

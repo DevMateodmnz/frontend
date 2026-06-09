@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  color: #000;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+/* Tarjeta */
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+}
+
+/* Contador */
+.counter-display {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.btn-group {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 1px solid #666;
+  background: #ddd;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.btn:hover {
+  background: #ccc;
+}
+
+.btn:active {
+  background: #bbb;
+}
+
+.btn-success {
+  background: #4CAF50;
+  color: white;
+  border: 1px solid #388E3C;
+}
+
+.btn-success:hover {
+  background: #388E3C;
+}
+
+.btn-danger {
+  background: #f44336;
+  color: white;
+  border: 1px solid #c62828;
+}
+
+.btn-danger:hover {
+  background: #c62828;
+}
+
+/* Reloj */
+.clock-display {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  margin: 10px 0;
+}
+
+.clock-status {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Age Fetcher */
+.form-row {
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #999;
+  margin-bottom: 10px;
+}
+
+.btn-accent {
+  background: #2196F3;
+  color: white;
+  border: 1px solid #1565C0;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-accent:hover {
+  background: #1565C0;
+}
+
+.result-box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.result-name {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.result-age {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.loading-text {
+  text-align: center;
+  color: #999;
+  margin-top: 10px;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}

@@ -1,16 +1,6 @@
 import React from 'react';
 
-/**
- * ClockClass — Reloj digital con setInterval / clearInterval
- *
- * Conceptos clave:
- *  - setInterval: ejecuta una función cada 1000ms para actualizar la hora
- *  - clearInterval: detiene el intervalo para evitar memory leaks
- *  - Guarda contra múltiples intervalos: si ya hay uno corriendo, no crea otro
- *  - componentWillUnmount: limpia el intervalo cuando el componente se desmonta
- *  - El ID del intervalo se guarda como propiedad de instancia (this.intervalId),
- *    NO en el state, porque no necesitamos re-renderizar al cambiarlo
- */
+// Componente de clase con setInterval y ciclo de vida
 class ClockClass extends React.Component {
   constructor(props) {
     super(props);
@@ -18,18 +8,16 @@ class ClockClass extends React.Component {
       time: new Date(),
       running: false,
     };
-    // Guardamos el ID del intervalo fuera del state
-    // (no dispara re-render, que es lo correcto para un ID de timer)
+    // Guardamos el ID del intervalo como propiedad de instancia
     this.intervalId = null;
   }
 
-  // Actualiza this.state.time con la hora actual
   tick = () => {
     this.setState({ time: new Date() });
   };
 
   startClock = () => {
-    // Evitamos crear múltiples intervalos si ya está corriendo
+    // Evita multiples intervalos
     if (this.intervalId !== null) return;
 
     this.intervalId = setInterval(this.tick, 1000);
@@ -37,15 +25,13 @@ class ClockClass extends React.Component {
   };
 
   stopClock = () => {
-    // Detenemos el intervalo y lo limpiamos
     clearInterval(this.intervalId);
     this.intervalId = null;
     this.setState({ running: false });
   };
 
-  // Ciclo de vida: se ejecuta justo antes de que el componente se elimine del DOM
+  // Limpiar al desmontar
   componentWillUnmount() {
-    // Limpieza: evitamos que el intervalo siga corriendo después de desmontar
     clearInterval(this.intervalId);
   }
 
@@ -71,7 +57,7 @@ class ClockClass extends React.Component {
         </div>
 
         <div className="clock-status">
-          {running ? '▶ Reloj corriendo' : '⏸ Reloj detenido'}
+          Estado: {running ? 'Corriendo' : 'Detenido'}
         </div>
       </div>
     );
