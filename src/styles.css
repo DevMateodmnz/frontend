@@ -1,0 +1,195 @@
+/* ==========================================
+   Trabajo Práctico React — Estilos
+   Simple, limpio, sin librerías externas
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #e94560;
+  display: inline-block;
+}
+
+.title-wrapper {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Tarjeta / Card --- */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #16213e;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e94560;
+}
+
+/* --- Contador --- */
+.counter-display {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #e94560;
+  margin: 0.75rem 0;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background-color: #e94560;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #c73652;
+}
+
+.btn-success {
+  background-color: #0f3460;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #1a1a6e;
+}
+
+.btn-danger {
+  background-color: #999;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #777;
+}
+
+/* --- Reloj --- */
+.clock-display {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  color: #16213e;
+  margin: 0.75rem 0;
+}
+
+.clock-status {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* --- Age Fetcher --- */
+.form-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #e94560;
+}
+
+.btn-accent {
+  background-color: #e94560;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.btn-accent:hover {
+  background-color: #c73652;
+}
+
+.result-box {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.result-name {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.result-age {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #16213e;
+}
+
+.loading-text {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+.error-text {
+  color: #e94560;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
