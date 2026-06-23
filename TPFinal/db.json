@@ -1,0 +1,29 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "description": "Sueldo mensual",
+      "amount": 500000,
+      "type": "income",
+      "category": "Sueldo",
+      "date": "2026-06-01"
+    },
+    {
+      "id": "2",
+      "description": "Compra del supermercado",
+      "amount": 45000,
+      "type": "expense",
+      "category": "Comida",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "3",
+      "description": "Factura de internet",
+      "amount": 25000,
+      "type": "expense",
+      "category": "Servicios",
+      "date": "2026-06-05"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,20 @@
+body {
+  background-color: #f5f7fb;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1100px;
+}
+
+.summary-card {
+  border-left: 4px solid #198754;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
